@@ -15,18 +15,6 @@ function draw() {
   background(5, 5, 15);
   orbitControl(); // Allows you to look around with your mouse!
 
-  // 1. Draw Starfield
-  push();
-  fill(255);
-  noStroke();
-  for (let s of stars) {
-    push();
-    translate(s.pos.x, s.pos.y, s.pos.z);
-    circle(0, 0, s.size);
-    pop();
-  }
-  pop();
-
   // 2. Draw Purple Rotating Planet
   push();
   translate(0, -100, -800);
